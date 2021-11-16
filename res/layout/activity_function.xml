@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/checkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:text="@string/tip_stbid"
+                android:textColor="#00CD00"
+                android:textSize="20dip" />
+
+            <EditText
+                android:id="@+id/input_wifiid"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                android:textColor="#00CD00"
+                android:textSize="20dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tip_check_stbid"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:gravity="center"
+            android:textColor="#00CD00"
+            android:textSize="30dip" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/testLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="850dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <SurfaceView
+                android:id="@+id/VideoView01"
+                android:layout_width="700dp"
+                android:layout_height="460dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:focusable="false" />
+
+            <RelativeLayout style="@style/LeftRelative">
+
+                <TextView
+                    style="@style/LeftTextTitle"
+                    android:text="@string/play_time" />
+
+                <TextView
+                    android:id="@+id/tv_play_time"
+                    style="@style/LeftTextInfo"
+                    android:layout_marginLeft="170dp" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/LeftRelative">
+
+                <TextView
+                    style="@style/LeftTextTitle"
+                    android:text="@string/public_set_point" />
+
+                <TextView
+                    android:id="@+id/tv_version_point"
+                    style="@style/LeftTextInfo"
+                    android:layout_marginLeft="190dp" />
+
+                <TextView
+                    style="@style/LeftTextTitle"
+                    android:layout_marginLeft="460dp"
+                    android:text="@string/str_version" />
+
+                <TextView
+                    android:id="@+id/tv_version_num"
+                    style="@style/LeftTextInfo"
+                    android:layout_marginLeft="580dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!-- 有线 -->
+
+            <RelativeLayout style="@style/LeftRelative">
+
+                <TextView
+                    style="@style/LeftTextTitle"
+                    android:layout_marginLeft="80dp"
+                    android:text="@string/str_mac" />
+
+                <TextView
+                    android:id="@+id/eth_mac"
+                    style="@style/LeftTextInfo"
+                    android:layout_marginLeft="230dp" />
+
+                <TextView
+                    style="@style/LeftTextTitle"
+                    android:layout_marginLeft="460dp"
+                    android:text="@string/str_netip" />
+
+                <TextView
+                    android:id="@+id/eth_ip"
+                    style="@style/LeftTextInfo"
+                    android:layout_marginLeft="580dp" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/LeftRelative">
+
+                <TextView
+                    style="@style/LeftTextTitle"
+                    android:layout_marginLeft="80dp"
+                    android:text="@string/srt_wifi_ip" />
+
+                <TextView
+                    android:id="@+id/wifi_ip"
+                    style="@style/LeftTextInfo"
+                    android:layout_marginLeft="230dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!-- 右边 界面     XXXXXXXXX############################################## -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="850dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <!-- 测试结果 -->
+            <!-- usb sd sata ############################## -->
+
+            <RelativeLayout
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/str_version" />
+
+                <TextView
+                    android:id="@+id/tv_test_version"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_test_usb1"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/srt_usb1" />
+
+                <TextView
+                    android:id="@+id/tv_test_usb1"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_test_usb2"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/srt_usb2" />
+
+                <TextView
+                    android:id="@+id/tv_test_usb2"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_test_sdcard"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/srt_sd" />
+
+                <TextView
+                    android:id="@+id/tv_text_sdcard"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_test_eth"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/str_eth" />
+
+                <TextView
+                    android:id="@+id/tv_test_eth"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bluetooth"
+                style="@style/RightRelative"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/str_bluetooth" />
+
+                <TextView
+                    android:id="@+id/tv_test_bluetooth"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+            <!-- hdmi  cvbs    ############################## -->
+
+            <RelativeLayout
+                android:id="@+id/rl_test_hdmi"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/str_hdmi" />
+
+                <TextView
+                    android:id="@+id/tv_test_hdmi"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_test_cvbs"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/srt_cvbs" />
+
+                <TextView
+                    android:id="@+id/tv_test_cvbs"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_test_wifi"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/srt_wifi" />
+
+                <TextView
+                    android:id="@+id/tv_test_wifi"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+
+            <!-- ca  check    ############################## -->
+            <RelativeLayout
+                android:id="@+id/rl_test_ca"
+                android:visibility="gone"
+                style="@style/RightRelative">
+
+                <TextView
+                    style="@style/RightTextTitle"
+                    android:text="@string/srt_ca" />
+
+                <TextView
+                    android:id="@+id/tv_test_ca"
+                    style="@style/RightTextPass"
+                    android:text="@string/str_pass" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/change_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:text="@string/change_output" />
+
+    </RelativeLayout>
+</FrameLayout>

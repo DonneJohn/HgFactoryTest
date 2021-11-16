@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#080808"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="200dp"
+        android:paddingRight="150dp"
+        android:paddingTop="10dp"
+        android:text="@string/tip"
+        android:textColor="#00CD00"
+        android:textSize="20pt" />
+
+    <TableLayout
+        android:id="@+id/info_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="200dp"
+        android:paddingRight="200dp"
+        android:paddingTop="60dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/sn_title"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:text="@string/input_sn"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+
+            <EditText
+                android:id="@+id/sn_edit"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/sn_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:text="@string/get_sn"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+
+            <TextView
+                android:id="@+id/get_sn"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/stbid_title"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:text="@string/input_stbid"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+
+            <EditText
+                android:id="@+id/stbid_edit"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:focusable="false"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/stbid_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:text="@string/get_stbid"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+
+            <TextView
+                android:id="@+id/get_stbid"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:focusable="false"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_getver"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:text="@string/get_ver"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+
+            <TextView
+                android:id="@+id/get_ver"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:focusable="false"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_getca"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_getca_title"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:text="@string/get_ca"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+
+            <TextView
+                android:id="@+id/tv_get_ca"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:focusable="false"
+                android:textColor="#00CD00"
+                android:textSize="15pt" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/current_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#00CD00"
+            android:textSize="18pt" />
+    </LinearLayout>
+</LinearLayout>

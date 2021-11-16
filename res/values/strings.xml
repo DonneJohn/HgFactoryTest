@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">HgFactoryTest</string>
+
+    <!--ageing-->
+    <string name="failed"> ) failed</string>
+    <string name="str_msg_time">Time Shaft</string>
+
+    <!--function-->
+    <string name="tip_stbid">请输入ID：</string>
+    <string name="check_stbid">请检查烧录的ID，实际读到的ID是</string>
+
+    <string name="play_time">播放时间:</string>
+    <string name="public_set_point">发行局点:</string>
+    <string name="str_version">版本号:</string>
+    <string name="str_mac">有线MAC地址:</string>
+    <string name="str_netip">有线IP地址:</string>
+    <string name="str_pass">通过</string>
+    <string name="str_dispass">不通过</string>
+    <string name="srt_sdcard_str">sdcard</string>
+    <string name="srt_usb1">USB1</string>
+    <string name="srt_usb2">USB2</string>
+    <string name="srt_sd">SD接口</string>
+    <string name="str_eth">有线接口</string>
+    <string name="str_bluetooth">蓝牙接口</string>
+    <string name="str_hdmi">HDMI接口</string>
+    <string name="srt_cvbs">AV接口</string>
+    <string name="srt_wifi_ip">无线IP地址:</string>
+    <string name="srt_wifi">无线</string>
+    <string name="srt_ca">高安</string>
+    <string name="change_output">切换视频输出</string>
+
+    <!--burn-->
+    <string name="tip_normalboard">SN和MAC烧录</string>
+    <string name="tip_input">请输入: </string>
+    <string name="tip_mac">MAC: </string>
+    <string name="tip_sn">SN: </string>
+    <string name="tip_burn_mac">已烧录MAC: </string>
+    <string name="tip_burn_sn">已烧录SN: </string>
+    <string name="burn_success">烧写成功</string>
+    <string name="burn_fail">烧写失败</string>
+    <string name="input_str">输入的字符串</string>
+    <string name="input_fail">检查有错误，请重新输入！</string>
+    <string name="tip_test_result1">获取不到测试数据，</string>
+    <string name="tip_test_result2">测试项没有进行测试；</string>
+    <string name="tip_test_result3">测试项测试失败；</string>
+    <string name="tip_test_result4">请重新进行功能测试！</string>
+
+    <string name="tip">校验SN和STBID</string>
+    <string name="input_sn">请输入SN: </string>
+    <string name="input_stbid">请输入STBID: </string>
+    <string name="get_sn">烧录的SN: </string>
+    <string name="get_stbid">烧录的STBID: </string>
+    <string name="get_ver">系统版本号：</string>
+    <string name="get_ca">高安校验：</string>
+    <string name="check_error">验证失败</string>
+    <string name="check_success">验证通过</string>
+    <string name="tip_facreset">! 2秒后恢复出厂设置，请不要断电！</string>
+    <string name="tip_version_check">版本校验</string>
+
+    <!-- socket-->
+    <string name="socketTest">无线吞吐量测试</string>
+    <string name="connect">连接</string>
+    <string name="begin">开始</string>
+    <string name="stop">停止</string>
+    <string name="wifi_ipaddr">无线ip地址：</string>
+    <string name="lf_result">低频测试结果：</string>
+    <string name="hf_result">高频测试结果：</string>
+
+</resources>
